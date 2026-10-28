@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+        <!-- Enlace a tu favicon -->
+<link rel="icon" type="image/jpeg" href="icono.png" sizes="32x32">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma Studio | Donde la luz se convierte en historia</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace a tu archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="ambient-glow"></div>
+
+    <!-- NAVBAR FIJA -->
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo-container">
+                <img src="prisma.png" alt="Logo Prisma Studio" class="logo">
+                <span class="brand-name">Prisma Studio</span>
+            </a>
+
+            <!-- Botón Hamburguesa para Celulares -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <i class="fa-solid fa-sparkles"></i> Agencia de Servicios Digitales de Alta Gama
+            </div>
+            <h1>Donde la luz se convierte en historia</h1>
+            <p>Elevamos marcas a través de estrategias digitales imponentes, diseño sofisticado y tecnología de vanguardia orientada a resultados extraordinarios.</p>
+            <a href="#servicios" class="btn-primary">
+                Explorar Servicios <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="services">
+        <div class="section-header reveal">
+            <span>Lo Que Hacemos</span>
+            <h2>Nuestros Servicios Digitales</h2>
+        </div>
+
+        <div class="services-grid">
+            <!-- Tarjeta 1 -->
+            <div class="service-card reveal" data-service="Publicidad y Marketing Digital">
+                <div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Publicidad y Marketing Digital</h3>
+                    <p>Campañas de alto rendimiento orientadas a conversión, posicionamiento estratégico y amplificación de marca en entornos digitales competitivos.</p>
+                </div>
+                <button class="btn-whatsapp" onclick="contactWhatsApp('Publicidad y Marketing Digital')">
+                    <i class="fa-brands fa-whatsapp"></i> Contratar Servicio
+                </button>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="service-card reveal" data-service="Diseño de Imagen Corporativa">
+                <div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3>Diseño de Imagen Corporativa</h3>
+                    <p>Creación de identidades visuales memorables, minimalistas y sofisticadas que comunican la esencia pura de tu marca con distinción.</p>
+                </div>
+                <button class="btn-whatsapp" onclick="contactWhatsApp('Diseño de Imagen Corporativa')">
+                    <i class="fa-brands fa-whatsapp"></i> Contratar Servicio
+                </button>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="service-card reveal" data-service="Manejo y Seguimiento de Redes Sociales">
+                <div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <h3>Manejo y Seguimiento de Redes Sociales</h3>
+                    <p>Gestión integral, curaduría de contenido cinematográfico y analítica avanzada para conectar emocionalmente con tu audiencia ideal.</p>
+                </div>
+                <button class="btn-whatsapp" onclick="contactWhatsApp('Manejo y Seguimiento de Redes Sociales')">
+                    <i class="fa-brands fa-whatsapp"></i> Contratar Servicio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <span>Arquitectura Digital</span>
+                <h2>Diseñamos el futuro visual de las marcas más exigentes.</h2>
+                <p>En Prisma Studio combinamos la precisión técnica del desarrollo senior con una visión estética impecable inspirada en el minimalismo y el diseño cinematográfico.</p>
+                <p>Nuestro enfoque transforma conceptos complejos en experiencias digitales fluidas, elegantes y altamente persuasivas.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h4>+98%</h4>
+                        <p>Satisfacción de clientes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>+120</h4>
+                        <p>Proyectos exitosos</p>
+                    </div>
+                </div>
+            </div>
+<div class="about-visual reveal">
+    <div class="about-visual-overlay"></div>
+    
+    <!-- Lado Izquierdo: Código -->
+    <div class="split-side left-side">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Código de desarrollo" class="about-img">
+        <span class="split-label"><i class="fa-solid fa-code"></i> Código</span>
+    </div>
+
+    <!-- Lado Derecho: Resultado (Interfaz Web Impresionante) -->
+    <div class="split-side right-side">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Resultado interfaz web de lujo" class="about-img">
+        <span class="split-label"><i class="fa-solid fa-display"></i> Resultado</span>
+    </div>
+
+    <div class="about-visual-content">
+        <span>Prisma Studio Core</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- FOOTER ESTILO TARJETA CENTRADA (INSPIRADO EN LA IMAGEN) -->
+    <footer id="contacto">
+        <div class="footer-centered-card reveal">
+            <!-- Logo Circular Centrado -->
+            <div class="footer-logo-wrapper">
+                <img src="prisma.png" alt="Prisma Studio" class="footer-logo-circle">
+
+            </div>
+
+            <!-- Título y Eslogan -->
+            <h3 class="footer-brand-title">Prisma Studio</h3>
+            <p class="footer-tagline">• Servicios Digitales •</p>
+
+            <!-- Redes Sociales (Instagram, Facebook, WhatsApp) -->
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/prism_astudio2026?xtok=MW5wOGw1c21tbmJ5bQ%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61590820198432" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/573108186325" target="_blank" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Contador de Visitas -->
+            <div class="visitor-counter-pill">
+                <span class="live-dot"></span>
+                <div class="counter-data">
+                    <span class="counter-number" id="visit-count">1.271</span>
+                    <span class="counter-label">Personas han visitado esta página</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Prisma Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp estilo celular -->
+    <a href="https://wa.me/573108186325" target="_blank" class="floating-whatsapp" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Enlace a tu archivo JavaScript externo -->
+    <script src="java.js"></script>
+</body>
+</html>
